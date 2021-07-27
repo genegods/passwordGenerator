@@ -1,0 +1,93 @@
+ body{
+     display: grid;
+     place-items: center;
+     height: 100vh; 
+    background-color: #d1d1d1;
+} 
+
+.card-header{
+    background: linear-gradient(to right, #1a1d12, #021a85);
+}
+.card-header h4{
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.passwordContainer{
+    width: 400px;
+    height: 200px;
+    /* background-color: red; */
+}
+
+.user{
+    display: flex;
+    margin: 30px;
+}
+.fa{
+    font-size: 25px;
+    margin-right: 8px;
+    color: #0e008b;
+}
+input{
+    height: 30px;
+    width: 250px;
+    font-weight: 600;
+    font-size: 25px;
+    border: none;
+    border-bottom: 2px solid #0e008b;
+    outline: none;
+    background: transparent;
+    color: #240707;
+    text-align: center;
+}
+
+.spinnerContainer{
+     /* width: 20px;
+    height: 20px;  */
+    /* background-color: red; */
+    margin-left: 10px;
+}
+
+.btnsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background: linear-gradient(to right, #1a1d12, #021a85);
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+
+/* creating our spinner */
+.noAnimateSpinner, .animateSpinner{
+    border-top: 3px dashed blue;
+    border-right: 3px dashed green;
+    border-bottom: 3px dashed red;
+    border-left: 3px dashed black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.animateSpinner{
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+
+
+
